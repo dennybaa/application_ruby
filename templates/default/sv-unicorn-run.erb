@@ -2,7 +2,7 @@
 
 <% if not @options[:rvm_ruby_string].empty? -%>
 source /etc/profile.d/rvm.sh
-rvm use @options[:rvm_ruby_string]
+rvm use <%= @options[:rvm_ruby_string] %>
 <% end -%>
 cd <%= @options[:app].path %>/current
 
